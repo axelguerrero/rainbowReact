@@ -1,19 +1,22 @@
+import './App.css';
 import React, { useState } from 'react'
 //importing colorBlock comp we just made
-import ColorBlock from './colorBlock'
+import ColorBlock from './ColorBlock'
 
-function App() {
-  let colors = ["purple", "blue", "red", "orange", "brown"]
+function App(){
+  let [colors, setColors] = useState (["purple", "blue", "red", "orange", "brown"])
+  
   let colorMap = colors.map((color, i) => {
     return (
-        <ColorBlock color={color} />
+      <ColorBlock color={color} />
     )
 })
 
+//.map to iterate through the array
 return (
-    <div className="App">
-        {colorMap}
-    </div>
+  <div className="App">
+      {colorMap}
+  </div>
 )
 }
 
