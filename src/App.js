@@ -26,6 +26,6 @@ return (
     <ColorForm addColor = {addColor}/>
   </div>
 )
-}
+} 
 
 export default App;
